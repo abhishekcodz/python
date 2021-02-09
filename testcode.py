@@ -58,10 +58,15 @@ for i in range(N):
 a = int(input())
 b = int(input())
 c = int(input())
-n = int(input())
-p = [i for i in range(a+1)]
-q = [i for i in range(b+1)]
-r = [i for i in range(c+1)]
-l = [(i,j,k) for (i,j,k) in zip(p,q,r) if i+j+k != n]
+
+n = int(input())
+
+p = [i for i in range(a+1)]
+
+q = [i for i in range(b+1)]
+
+r = [i for i in range(c+1)]
+
+l = [(i,j,k) for (i,j,k) in zip(p,q,r) if i+j+k != n]
 print(l)
 
